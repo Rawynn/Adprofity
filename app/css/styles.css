@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background: linear-gradient(45deg, #fdfdfd 0%, #b6b7b9 100%); }
+
 html {
   font-family: 'Roboto', arial, sans-serif;
   font-size: 10px; }
@@ -104,10 +107,10 @@ html {
       text-align: center; }
       .quiz-container .quiz-wrapper .quiz-content #quiz .result p {
         margin: 30px 0; }
-      .quiz-container .quiz-wrapper .quiz-content #quiz .result p:nth-child(2) {
+      .quiz-container .quiz-wrapper .quiz-content #quiz .result p:nth-of-type(2) {
         font-size: 2rem; }
   .quiz-container.closed {
-    height: 0vh; }
+    height: 0; }
 
 @media (max-width: 600px) {
   .quiz-container .quiz-wrapper .quiz-content #quiz .slide .question {
@@ -121,11 +124,410 @@ html {
     .quiz-container .quiz-wrapper .quiz-content #quiz .result p:nth-child(2) {
       font-size: 1.5rem; } }
 
-.leftSide {
-  background-color: #ffc935;
-  width: 35%; }
+#CV {
+  max-width: 1100px;
+  margin: 10rem auto;
+  box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.2), 5px 5px 11px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  background-color: #fff; }
+  #CV .leftSide,
+  #CV .rightSide {
+    float: left; }
+  #CV .leftSide {
+    position: relative;
+    background-color: #ffc935;
+    width: 35%;
+    padding-bottom: 9rem;
+    padding-top: 9rem; }
+    #CV .leftSide section:not(#basicInfo) {
+      margin: 6rem 0; }
+    #CV .leftSide h2 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      color: #383838;
+      font-weight: 500;
+      text-align: center;
+      margin: 3rem 1rem; }
+    #CV .leftSide #basicInfo .image {
+      background-color: #fff;
+      width: 20vw;
+      height: 20vw;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0 6px #ffc935, 0 0 0 14px #fff;
+      margin: 30px auto;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      max-width: 230px;
+      max-height: 230px; }
+      #CV .leftSide #basicInfo .image img {
+        width: 90%; }
+    #CV .leftSide #basicInfo h1 {
+      font-size: 7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      color: #383838;
+      line-height: 1;
+      padding: 0 2rem; }
+    #CV .leftSide #basicInfo .profession {
+      font-style: italic;
+      color: #ffc935;
+      background-color: #383838;
+      text-align: center;
+      padding: 1rem;
+      font-size: 2.8rem;
+      margin: 3rem 0; }
+    #CV .leftSide #contact .contact-content {
+      line-height: 2;
+      font-size: 1.6rem; }
+      #CV .leftSide #contact .contact-content i {
+        color: #ffc935;
+        margin-right: 1rem;
+        width: 25%;
+        text-align: right;
+        background-color: #383838;
+        padding: 1rem;
+        font-size: 2.1rem; }
+      #CV .leftSide #contact .contact-content ul {
+        list-style: none; }
+        #CV .leftSide #contact .contact-content ul li {
+          padding: .5rem 0;
+          margin: 5px 0; }
+    #CV .leftSide #hobbies {
+      margin-bottom: 6rem; }
+      #CV .leftSide #hobbies .hobbies-content {
+        font-size: 1.6rem;
+        margin: 0 auto;
+        width: 90%; }
+        #CV .leftSide #hobbies .hobbies-content .fa-plane::before {
+          transform: rotate(-40deg);
+          display: block; }
+        #CV .leftSide #hobbies .hobbies-content i {
+          padding: .5rem;
+          width: 6rem;
+          height: 6rem;
+          font-size: 3rem;
+          text-align: center;
+          background-color: #383838;
+          color: #ffc935;
+          margin-right: 1rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center; }
+        #CV .leftSide #hobbies .hobbies-content .hobbyElement {
+          padding: 1rem 2rem;
+          float: left;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          #CV .leftSide #hobbies .hobbies-content .hobbyElement .hobbyElement-wrapper {
+            display: inline-flex;
+            align-items: center; }
+            #CV .leftSide #hobbies .hobbies-content .hobbyElement .hobbyElement-wrapper span {
+              width: 6rem; }
+    #CV .leftSide .socials {
+      position: absolute;
+      bottom: 4rem;
+      left: 0;
+      right: 0;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #383838; }
+      #CV .leftSide .socials .socials-content {
+        margin: 0 auto; }
+      #CV .leftSide .socials div {
+        float: left;
+        margin: 0 1.5rem; }
+  #CV .rightSide {
+    width: 65%;
+    margin-top: 5rem; }
+    #CV .rightSide section {
+      padding-left: 4rem;
+      font-size: 1.6rem;
+      color: #383838;
+      margin-bottom: 5rem; }
+      #CV .rightSide section .header {
+        margin: 3rem 0; }
+        #CV .rightSide section .header i {
+          width: 10%;
+          float: left;
+          font-size: 4.5rem;
+          color: #ffc935;
+          padding: .5rem 0; }
+        #CV .rightSide section .header h2 {
+          width: 90%;
+          float: left;
+          background-color: #383838;
+          color: #fff;
+          text-transform: uppercase;
+          padding: .5rem 1.5rem;
+          font-size: 3.5rem;
+          font-weight: 500; }
+    #CV .rightSide #profile .about {
+      padding-right: 3rem; }
+      #CV .rightSide #profile .about p {
+        margin: 2rem 0; }
+    #CV .rightSide #education .education-content,
+    #CV .rightSide #education .experience-content,
+    #CV .rightSide #experience .education-content,
+    #CV .rightSide #experience .experience-content {
+      padding-right: 3rem; }
+      #CV .rightSide #education .education-content .education-element,
+      #CV .rightSide #education .education-content .experience-element,
+      #CV .rightSide #education .experience-content .education-element,
+      #CV .rightSide #education .experience-content .experience-element,
+      #CV .rightSide #experience .education-content .education-element,
+      #CV .rightSide #experience .education-content .experience-element,
+      #CV .rightSide #experience .experience-content .education-element,
+      #CV .rightSide #experience .experience-content .experience-element {
+        position: relative;
+        margin-left: 6rem; }
+        #CV .rightSide #education .education-content .education-element:nth-child(1),
+        #CV .rightSide #education .education-content .experience-element:nth-child(1),
+        #CV .rightSide #education .experience-content .education-element:nth-child(1),
+        #CV .rightSide #education .experience-content .experience-element:nth-child(1),
+        #CV .rightSide #experience .education-content .education-element:nth-child(1),
+        #CV .rightSide #experience .education-content .experience-element:nth-child(1),
+        #CV .rightSide #experience .experience-content .education-element:nth-child(1),
+        #CV .rightSide #experience .experience-content .experience-element:nth-child(1) {
+          padding-bottom: 1rem; }
+        #CV .rightSide #education .education-content .education-element p,
+        #CV .rightSide #education .education-content .experience-element p,
+        #CV .rightSide #education .experience-content .education-element p,
+        #CV .rightSide #education .experience-content .experience-element p,
+        #CV .rightSide #experience .education-content .education-element p,
+        #CV .rightSide #experience .education-content .experience-element p,
+        #CV .rightSide #experience .experience-content .education-element p,
+        #CV .rightSide #experience .experience-content .experience-element p {
+          padding: .5rem 0; }
+        #CV .rightSide #education .education-content .education-element h3,
+        #CV .rightSide #education .education-content .experience-element h3,
+        #CV .rightSide #education .experience-content .education-element h3,
+        #CV .rightSide #education .experience-content .experience-element h3,
+        #CV .rightSide #experience .education-content .education-element h3,
+        #CV .rightSide #experience .education-content .experience-element h3,
+        #CV .rightSide #experience .experience-content .education-element h3,
+        #CV .rightSide #experience .experience-content .experience-element h3 {
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: 700;
+          padding-top: 1.5rem;
+          padding: .5rem 0; }
+        #CV .rightSide #education .education-content .education-element h3::before,
+        #CV .rightSide #education .education-content .experience-element h3::before,
+        #CV .rightSide #education .experience-content .education-element h3::before,
+        #CV .rightSide #education .experience-content .experience-element h3::before,
+        #CV .rightSide #experience .education-content .education-element h3::before,
+        #CV .rightSide #experience .education-content .experience-element h3::before,
+        #CV .rightSide #experience .experience-content .education-element h3::before,
+        #CV .rightSide #experience .experience-content .experience-element h3::before {
+          content: "";
+          position: absolute;
+          display: block;
+          background-color: #ffc935;
+          width: 1.5rem;
+          height: 1.5rem;
+          left: calc(-4rem - (1.5rem/2) + 2px);
+          border-radius: 50%; }
+      #CV .rightSide #education .education-content .education-element::before,
+      #CV .rightSide #education .education-content .experience-element::before,
+      #CV .rightSide #education .experience-content .education-element::before,
+      #CV .rightSide #education .experience-content .experience-element::before,
+      #CV .rightSide #experience .education-content .education-element::before,
+      #CV .rightSide #experience .education-content .experience-element::before,
+      #CV .rightSide #experience .experience-content .education-element::before,
+      #CV .rightSide #experience .experience-content .experience-element::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #ffc935;
+        width: 4px;
+        height: 100%;
+        left: -4rem; }
+    #CV .rightSide #skills .skills-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      margin-bottom: 7rem; }
+      #CV .rightSide #skills .skills-content .skill {
+        display: flex;
+        align-items: center;
+        width: calc(100% / 3);
+        justify-content: center; }
+        #CV .rightSide #skills .skills-content .skill .skill-wrapper {
+          display: flex;
+          align-items: center;
+          margin: 1.5rem 1rem; }
+          #CV .rightSide #skills .skills-content .skill .skill-wrapper .skill-circle {
+            position: relative;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left; }
+            #CV .rightSide #skills .skills-content .skill .skill-wrapper .skill-circle .skill-value {
+              z-index: 1;
+              font-weight: 700;
+              font-size: 2rem; }
+          #CV .rightSide #skills .skills-content .skill .skill-wrapper .skill-circle::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: calc(8rem - 2rem);
+            height: calc(8rem - 2rem);
+            background-color: #fff;
+            border-radius: 50%; }
+          #CV .rightSide #skills .skills-content .skill .skill-wrapper .skill-name {
+            width: 60px;
+            float: left;
+            margin: .5rem 1rem;
+            margin-left: 2rem; }
+        #CV .rightSide #skills .skills-content .skill:nth-child(1) .skill-circle {
+          background-image: linear-gradient(0deg, #dcdcdc 50%, transparent 50%), linear-gradient(90deg, #ffc935 50%, #dcdcdc 50%); }
+        #CV .rightSide #skills .skills-content .skill:nth-child(2) .skill-circle {
+          background-image: linear-gradient(72deg, #ffc935 50%, transparent 50%), linear-gradient(-90deg, #dcdcdc 50%, #ffc935 50%); }
+        #CV .rightSide #skills .skills-content .skill:nth-child(3) .skill-circle {
+          background-image: linear-gradient(90deg, #ffc935 50%, transparent 50%), linear-gradient(-90deg, #dcdcdc 50%, #ffc935 50%); }
+        #CV .rightSide #skills .skills-content .skill:nth-child(4) .skill-circle {
+          background-image: linear-gradient(18deg, #ffc935 50%, transparent 50%), linear-gradient(-90deg, #dcdcdc 50%, #ffc935 50%); }
+        #CV .rightSide #skills .skills-content .skill:nth-child(5) .skill-circle {
+          background-image: linear-gradient(-36deg, #ffc935 50%, transparent 50%), linear-gradient(-90deg, #dcdcdc 50%, #ffc935 50%); }
+        #CV .rightSide #skills .skills-content .skill:nth-child(6) .skill-circle {
+          background-image: linear-gradient(-54deg, #ffc935 50%, transparent 50%), linear-gradient(-90deg, #dcdcdc 50%, #ffc935 50%); }
 
-.leftSide,
-.rightSide {
-  float: left;
-  height: 150vh; }
+footer {
+  background-color: #383838;
+  height: 5rem;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 5rem; }
+  footer a {
+    color: #ffc935;
+    text-decoration: none; }
+
+@media (max-width: 1100px) {
+  #CV {
+    margin: 0 auto; } }
+
+@media (max-width: 1070px) {
+  #CV .leftSide #hobbies .hobbies-content .hobbyElement {
+    padding: 1rem 1rem; } }
+
+@media (max-width: 1024px) {
+  #CV {
+    flex-wrap: wrap; }
+    #CV .leftSide,
+    #CV .rightSide {
+      float: none;
+      width: 100%; }
+    #CV .leftSide #basicInfo .image {
+      width: 44vw;
+      height: 44vw;
+      max-width: 400px;
+      max-height: 400px;
+      min-height: 240px;
+      min-width: 240px; }
+    #CV .leftSide #contact .contact-content ul li {
+      font-size: 2rem; }
+    #CV .leftSide #contact .contact-content i {
+      font-size: 2.5rem; }
+    #CV .leftSide #hobbies .hobbies-content {
+      font-size: 1.8rem; }
+      #CV .leftSide #hobbies .hobbies-content .hobbyElement {
+        width: calc(100% / 4); }
+    #CV .rightSide section {
+      font-size: 1.8rem;
+      line-height: 1.3; }
+    #CV .rightSide #profile .about p {
+      font-size: 1.8rem;
+      line-height: 1.3; }
+    #CV .rightSide h3 {
+      font-size: 2.3rem;
+      padding: 1rem 0; }
+    #CV .rightSide p {
+      padding: 1rem 0; } }
+
+@media (max-width: 670px) {
+  #CV .leftSide #hobbies .hobbies-content .hobbyElement {
+    width: calc(100% / 2); }
+  #CV .rightSide section .header i {
+    width: 15%; }
+  #CV .rightSide section .header h2 {
+    width: 85%; }
+  #CV .rightSide #skills .skills-content .skill {
+    width: calc(100% / 2); } }
+
+@media (max-width: 520px) {
+  #CV .rightSide section .header i {
+    width: 20%; }
+  #CV .rightSide section .header h2 {
+    width: 80%;
+    font-size: 3rem;
+    padding: 1rem 1.5rem; } }
+
+@media (max-width: 430px) {
+  #CV .leftSide #hobbies .hobbies-content .hobbyElement {
+    padding: 1rem 1rem; }
+  #CV .leftSide #contact .contact-content ul li {
+    font-size: 1.6rem; }
+  #CV .leftSide #contact .contact-content i {
+    font-size: 2rem; } }
+
+@media (max-width: 400px) {
+  #CV .rightSide #skills .skills-content .skill {
+    width: calc(100% / 1); } }
+
+@media (max-width: 350px) {
+  #CV .leftSide #hobbies .hobbies-content .hobbyElement {
+    padding: 1rem 0; } }
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  #CV .leftSide #basicInfo h1 {
+    font-size: 9rem; }
+  #CV .leftSide .socials {
+    font-size: 1.7rem; } }
+
+@media (min-width: 350px) and (max-width: 700px) {
+  #CV .leftSide .socials {
+    font-size: 1.5rem; } }
+
+.wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; }
+  .wrapper .congrats {
+    background: #353d49;
+    color: #fff;
+    padding: 6rem;
+    font-size: 5rem;
+    border-radius: 1rem; }
+
+[class|="confetti"] {
+  position: absolute; }
+
+.red {
+  background-color: #E94A3F; }
+
+.yellow {
+  background-color: #FAA040; }
+
+.blue {
+  background-color: #5FC9F5; }

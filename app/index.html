@@ -8,13 +8,14 @@
     <title>CV</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;subset=latin-ext" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body class="hide-scroll">
@@ -27,9 +28,186 @@
     </section>
 
     <section id="CV" class="clearfix">
-        <div class="leftSide"></div>
-        <div class="rightSide"></div>
+        <div class="wrapper">
+            <div class="congrats">Gratulacje!</div>
+        </div>
+        <div class="leftSide">
+            <section id="basicInfo">
+                <div class="image">
+                    <img src="/images/woman.png" alt="Picture of a woman, who is an owner of this CV">
+                </div>
+                <h1>Jane Smith</h1>
+                <h2 class="profession">Web Developer</h2>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i>johnsmith@company.com</li>
+                        <li><i class="fas fa-phone"></i>+62 0819090168930</li>
+                        <li><i class="fas fa-home"></i>Merkid, Yogyakarta</li>
+                        <li><i class="fas fa-globe"></i>www.jhonmrongos.com</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <div class="hobbies-content clearfix">
+                    <div class="hobbyElement">
+                        <div class="hobbyElement-wrapper"><i class="fas fa-plane"></i><span>Travel</span></div>
+                    </div>
+                    <div class="hobbyElement">
+                        <div class="hobbyElement-wrapper"><i class="fas fa-book-open"></i><span>Reading</span></div>
+                    </div>
+                    <div class="hobbyElement">
+                        <div class="hobbyElement-wrapper"><i class="fab fa-itunes-note"></i><span>Music</span></div>
+                    </div>
+                    <div class="hobbyElement">
+                        <div class="hobbyElement-wrapper"><i class="fas fa-pencil-alt"></i><span>Writing</span></div>
+                    </div>
+                </div>
+            </section>
+            <div class="socials clearfix">
+                <div class="socials-content">
+                    <div class="twitter">Twitter: @Johndoe</div>
+                    <div class="facebook">Facebook: John Doe</div>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide">
+            <section id="profile">
+                <div class="header clearfix">
+                    <i class="fas fa-user"></i>
+                    <h2>Profile</h2>
+                </div>
+                <div class="about">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, labore? Minus, totam
+                        ducimus asperiores aut saepe, unde consectetur, culpa temporibus dignissimos aperiam quis? Sunt
+                        ipsam suscipit id vitae eveniet hic in rerum inventore nostrum sapiente odit, architecto,
+                        delectus
+                        deleniti corrupti ex possimus quidem, qui itaque aliquid. Eaque, excepturi consectetur! Ipsa ad
+                        reprehenderit accusantium? Necessitatibus, veniam deleniti quos optio saepe ratione.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem nisi ipsum vitae modi
+                        impedit omnis unde. Nisi aspernatur cumque suscipit placeat, tempora impedit, corporis error ab
+                        aperiam quibusdam minima tempore assumenda.
+                    </p>
+                </div>
+            </section>
+            <section id="education">
+                <div class="header clearfix">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h2>Education</h2>
+                </div>
+
+                <div class="education-content">
+                    <div class="education-element">
+                        <h3>University of YK</h3>
+                        <h4>Bachelor in Technology Information</h4>
+                        <h5>2011 - 2014</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis iure in autem ullam
+                            voluptatibus maiores nobis dolor id vel!</p>
+                    </div>
+                    <div class="education-element">
+                        <h3>University of GK</h3>
+                        <h4>Master in Technology Information</h4>
+                        <h5>2014 - 2016</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis iure in autem ullam
+                            voluptatibus maiores nobis dolor id vel!</p>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <div class="header clearfix">
+                    <i class="fas fa-desktop"></i>
+                    <h2>Experience</h2>
+                </div>
+
+                <div class="experience-content">
+                    <div class="experience-element">
+                        <h3>Dugab yk.co</h3>
+                        <h4>Junior Frontend Developer</h4>
+                        <h5>2016</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis iure in autem ullam
+                            voluptatibus maiores nobis dolor id vel!</p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="header clearfix">
+                    <i class="fas fa-cog"></i>
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="skills-content">
+                    <div class="skill clearfix">
+                        <div class="skill-wrapper">
+                            <div class="skill-circle">
+                                <div class="skill-value">25%</div>
+                            </div>
+
+                            <div class="skill-name">Java</div>
+                        </div>
+
+                    </div>
+                    <div class="skill clearfix">
+                        <div class="skill-wrapper">
+                            <div class="skill-circle">
+                                <div class="skill-value">55%</div>
+                            </div>
+
+                            <div class="skill-name">PHP</div>
+                        </div>
+
+                    </div>
+                    <div class="skill clearfix">
+                        <div class="skill-wrapper">
+                            <div class="skill-circle">
+                                <div class="skill-value">50%</div>
+                            </div>
+
+                            <div class="skill-name">C#</div>
+                        </div>
+
+                    </div>
+                    <div class="skill clearfix">
+                        <div class="skill-wrapper">
+                            <div class="skill-circle">
+                                <div class="skill-value">70%</div>
+                            </div>
+
+                            <div class="skill-name">HTML5</div>
+                        </div>
+
+                    </div>
+                    <div class="skill clearfix">
+                        <div class="skill-wrapper">
+                            <div class="skill-circle">
+                                <div class="skill-value">85%</div>
+                            </div>
+
+                            <div class="skill-name">CSS</div>
+                        </div>
+
+                    </div>
+                    <div class="skill clearfix">
+                        <div class="skill-wrapper">
+                            <div class="skill-circle">
+                                <div class="skill-value">90%</div>
+                            </div>
+
+                            <div class="skill-name">Swift</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </section>
+    <footer>
+        <div>Icon of a woman made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
 </body>
 
 </html>

@@ -1,4 +1,56 @@
 (function () {
+
+    function confetti() {
+        for (var i = 0; i < 250; i++) {
+            create(i);
+        }
+
+        function create(i) {
+            var width = Math.random() * 8;
+            var height = width * 0.4;
+            var colourIdx = Math.ceil(Math.random() * 3);
+            var colour = "red";
+            switch (colourIdx) {
+                case 1:
+                    colour = "yellow";
+                    break;
+                case 2:
+                    colour = "blue";
+                    break;
+                default:
+                    colour = "red";
+            }
+            $('<div class="confetti-' + i + ' ' + colour + '"></div>').css({
+                "width": width + "px",
+                "height": height + "px",
+                "top": -Math.random() * 20 + "%",
+                "left": Math.random() * 100 + "%",
+                "opacity": Math.random() + 0.5,
+                "transform": "rotate(" + Math.random() * 360 + "deg)"
+            }).appendTo('.wrapper');
+
+            drop(i);
+        }
+
+        function drop(x) {
+            $('.confetti-' + x).animate({
+                top: "100%",
+                left: "+=" + Math.random() * 15 + "%"
+            }, Math.random() * 3000 + 3000, function () {
+                reset(x);
+            });
+        }
+
+        function reset(x) {
+            $('.confetti-' + x).animate({
+                "top": -Math.random() * 20 + "%",
+                "left": "-=" + Math.random() * 15 + "%"
+            }, 0, function () {
+                drop(x);
+            });
+        }
+    }
+
     $(function () {
         const questions = [{
                 question: "Kto jest silniejszy?",
@@ -60,7 +112,6 @@
         }
 
         function showNextSlide() {
-
             if ($(window).width() >= 1024) {
                 $('.quiz-wrapper').animate({
                     "margin-left": "-160%"
@@ -77,6 +128,8 @@
                 setTimeout(function () {
                     showSlide(currentSlide + 1);
                 }, 500);
+            } else {
+                showSlide(currentSlide + 1);
             }
         }
 
@@ -111,6 +164,21 @@
             });
             if (result > 2) {
                 $('.quiz-container').addClass('closed');
+                if ($(window).width() >= 1024) {
+                    $('.wrapper').css('display', 'flex');
+                    $('.wrapper').animate({
+                        "opacity": "1"
+                    }, 700);
+                    confetti();
+                    setTimeout(function () {
+                        $('.wrapper').animate({
+                            "opacity": "0"
+                        }, 700);
+                    }, 3000);
+                    setTimeout(function () {
+                        $('.wrapper').css('display', 'none');
+                    }, 3900)
+                }
                 $('body').removeClass("hide-scroll");
             } else {
                 if ($(window).width() >= 1024) {
@@ -119,7 +187,7 @@
                     }, 500);
 
                     setTimeout(function () {
-                        quizContainer.html(`<div class="result"><p>Niestety nie mogę pokazać Ci CV.</p><p>Poprawnych odpowiedzi: ` + result + `.</p></div>`);
+                        quizContainer.html(`<div class="result"><h1>BRAK DOSTĘPU</h1><p>Niestety nie mogę pokazać Ci CV.</p><p>Poprawnych odpowiedzi: ` + result + `.</p></div>`);
                     }, 500);
 
                     $('.quiz-wrapper').animate({
