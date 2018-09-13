@@ -504,7 +504,7 @@ footer {
     font-size: 1.5rem; } }
 
 .wrapper {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   top: 0;
