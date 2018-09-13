@@ -406,11 +406,13 @@ html {
 
 footer {
   background-color: #383838;
-  height: 5rem;
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
   line-height: 5rem; }
+  footer div {
+    padding: 20px;
+    line-height: 1.6; }
   footer a {
     color: #ffc935;
     text-decoration: none; }

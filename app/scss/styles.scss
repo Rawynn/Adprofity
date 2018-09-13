@@ -594,11 +594,15 @@ $light-grey: #dcdcdc;
 
 footer {
     background-color: $grey;
-    height: 5rem;
     color: #fff;
     font-size: 1.4rem;
     text-align: center;
     line-height: 5rem;
+
+    div {
+        padding: 20px;
+        line-height: 1.6;
+    }
 
     a {
         color: $yellow;
