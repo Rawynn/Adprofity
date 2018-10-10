@@ -64,7 +64,7 @@ gulp.task('scripts', function () {
 var del = require('del');
 
 gulp.task('clean:dist', function () {
-    return del.sync('dist');
+    return del.sync(['dist/*', '!dist/images']);
 })
 
 
